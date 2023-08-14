@@ -1,4 +1,4 @@
-<!doctype html>
+<!-- <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
@@ -6,19 +6,54 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
 integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
-    <title>CS 340: PNG Microservice</title>
+    <title>squarify</title>
   </head>
   <body>
     <div class="container">
-      <h1>Extract GIF</h1>
+      <h1>fit your pictures into a square</h1>
 
       <form method="POST" enctype="multipart/form-data" action="/extract">
         <div class="form-group">
-          <label for="png">PNG File</label>
+          <label for="png">upload image files</label>
           <input type="file"  class="form-control" id="png" name="png">
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary">submit</button>
       </form>
     </div>
   </body>
+</html> -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .container {
+      text-align: center;
+    }
+  </style>
+  <title>squarify</title>
+</head>
+<body>
+  <div class="container">
+    <h1>fit your pictures into a square</h1>
+    <form method="POST" enctype="multipart/form-data" action="/extract">
+      <div class="form-group">
+        <label for="png">upload image files</label>
+        <input type="file" class="form-control" id="png" name="png">
+      </div>
+      <button type="submit" class="btn btn-primary">submit</button>
+    </form>
+  </div>
+</body>
 </html>
