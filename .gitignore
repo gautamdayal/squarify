@@ -1,2 +1,5 @@
 # Mac bs
 .DS_Store
+
+# Images
+output/*
